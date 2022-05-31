@@ -4,6 +4,21 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Calls extends StatelessWidget {
   const Calls({Key? key}) : super(key: key);
+
+  Widget getStory(title, subTitle) {
+    return ListTile(
+      leading: CircleAvatar(
+        backgroundImage: NetworkImage("https://i0.wp.com/www.cirebonkota.go.id/wp-content/uploads/2018/05/jokowi.jpg"),
+        radius: 30,
+      ),
+      title: Text(
+        title,
+        style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
+      ),
+      subtitle: Text(subTitle),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
