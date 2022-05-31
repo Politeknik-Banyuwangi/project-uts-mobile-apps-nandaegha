@@ -23,7 +23,7 @@ class Chats extends StatelessWidget {
                 radius: 30.0,
               ),
               title: Text(
-                'Anda',
+                'Bagas',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
               subtitle: Row(
@@ -35,10 +35,10 @@ class Chats extends StatelessWidget {
                   SizedBox(
                     width: 3.0,
                   ),
-                  Text('Tugasmu urung mari dap'),
+                  Text('Im here guys'),
                 ],
               ),
-              trailing: Text('18.00'),
+              trailing: Text('09.00'),
             ),
           ],
         ),
