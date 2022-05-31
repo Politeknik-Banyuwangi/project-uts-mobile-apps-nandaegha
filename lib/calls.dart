@@ -4,42 +4,6 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Calls extends StatelessWidget {
   const Calls({Key? key}) : super(key: key);
-
-  Widget getStory(title, subTitle) {
-    return ListTile(
-      leading: CircleAvatar(
-        backgroundImage: NetworkImage("https://i0.wp.com/www.cirebonkota.go.id/wp-content/uploads/2018/05/jokowi.jpg"),
-        radius: 30,
-      ),
-      title: Text(
-        title,
-        style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
-      ),
-      subtitle: Row(
-        children: [
-          Icon(
-            Icons.south_west,
-            color: Colors.green,
-            size: 16.0,
-          ),
-          SizedBox(
-            width: 3.0,
-          ),
-          Text(
-            subTitle,
-            style: TextStyle(
-              fontSize: 16.0,
-            ),
-          ),
-        ],
-      ),
-      trailing: Icon(
-        Icons.call,
-        color: Colors.green,
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -76,7 +40,7 @@ class Calls extends StatelessWidget {
                     width: 3.0,
                   ),
                   Text(
-                    '24 Menit yang lalu',
+                    '24 menit yang lalu',
                     style: TextStyle(
                       fontSize: 16.0,
                     ),
@@ -88,10 +52,6 @@ class Calls extends StatelessWidget {
                 color: Colors.green,
               ),
             ),
-            getStory("Sasuke", "Hari ini 13.10"),
-            getStory("Ribut", "Hari ini 06.00"),
-            getStory("Moh Ali", "Kemarin 20.24"),
-            getStory("Ruebe", "23 April 07.02"),
           ],
         ),
       ),
