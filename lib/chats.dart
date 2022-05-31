@@ -14,7 +14,15 @@ class Chats extends StatelessWidget {
         title,
         style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
       ),
-      subtitle: Text(subTitle),
+      subtitle: Row(
+        children: [
+          Icon(
+            Icons.done_all_rounded,
+            color: Colors.blue,
+          ),
+        ],
+      ),
+      trailing: Text('09.00'),
     );
   }
 
