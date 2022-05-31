@@ -15,7 +15,28 @@ class Calls extends StatelessWidget {
         title,
         style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
       ),
-      subtitle: Text(subTitle),
+      subtitle: Row(
+        children: [
+          Icon(
+            Icons.south_west,
+            color: Colors.green,
+            size: 16.0,
+          ),
+          SizedBox(
+            width: 3.0,
+          ),
+          Text(
+            subTitle,
+            style: TextStyle(
+              fontSize: 16.0,
+            ),
+          ),
+        ],
+      ),
+      trailing: Icon(
+        Icons.call,
+        color: Colors.green,
+      ),
     );
   }
 
@@ -55,7 +76,7 @@ class Calls extends StatelessWidget {
                     width: 3.0,
                   ),
                   Text(
-                    '24 menit yang lalu',
+                    '24 Menit yang lalu',
                     style: TextStyle(
                       fontSize: 16.0,
                     ),
