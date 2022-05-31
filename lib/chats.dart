@@ -20,6 +20,10 @@ class Chats extends StatelessWidget {
             Icons.done_all_rounded,
             color: Colors.blue,
           ),
+          SizedBox(
+            width: 3.0,
+          ),
+          Text(subTitle),
         ],
       ),
       trailing: Text('09.00'),
