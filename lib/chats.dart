@@ -4,6 +4,20 @@ import 'package:flutter/material.dart';
 class Chats extends StatelessWidget {
   const Chats({Key? key}) : super(key: key);
 
+  Widget getStory(title, subTitle) {
+    return ListTile(
+      leading: CircleAvatar(
+        backgroundImage: NetworkImage("https://i0.wp.com/www.cirebonkota.go.id/wp-content/uploads/2018/05/jokowi.jpg"),
+        radius: 30,
+      ),
+      title: Text(
+        title,
+        style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
+      ),
+      subtitle: Text(subTitle),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,6 +54,12 @@ class Chats extends StatelessWidget {
               ),
               trailing: Text('09.00'),
             ),
+            getStory("Sasuke", "Heii Bro"),
+            getStory("Ribut", "Thanks You"),
+            getStory("Moh Ali", "See you Again"),
+            getStory("Ruebe", "Well Hello Bro"),
+            getStory("Taro", "Hmmm"),
+            getStory("Hassan", "Oke"),
           ],
         ),
       ),

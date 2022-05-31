@@ -23,7 +23,7 @@ class Calls extends StatelessWidget {
                 radius: 30.0,
               ),
               title: Text(
-                'SomeOne',
+                'Bagus',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 18.0,
